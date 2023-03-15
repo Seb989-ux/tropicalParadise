@@ -7,7 +7,7 @@
 .white-block {
   position: absolute;
   height: 40px;
-  width: 60%;
+  width: 45%;
   background-color: #fff;
 }
 .white-block-left {
@@ -38,7 +38,7 @@
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s;
-  z-index: -1;
+  z-index: -2;
 }
 .btn-special-animation:hover::before {
   transform: scaleX(1);
@@ -126,7 +126,7 @@ body {
 }
 .header__title {
   font-family: "Dancing Script", cursive;
-  font-size: 4, 8rem;
+  font-size: 4.8rem;
   font-weight: 300;
 }
 .header__text {
@@ -134,8 +134,8 @@ body {
 }
 .header__btn {
   margin-top: 2em;
-  padding: 0.8em 1.6em;
-  font-size: 1.4rem;
+  padding: 0.7em 1.2em;
+  font-size: 1.2rem;
   background: #fff;
   border: none;
   border-radius: 8px;
@@ -146,4 +146,33 @@ body {
 }
 .header__btn::before {
   background-color: #eee;
+}
+
+@media (min-width: 768px) {
+  .white-block {
+    height: 45px;
+    width: 45%;
+  }
+  .header__title {
+    font-size: 6.6rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+  .header__btn {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 30px;
+    right: 30px;
+  }
+  .header {
+    -o-border-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/img/palm-big.jpg");
+       border-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/img/palm-big.jpg");
+  }
+  .header__title {
+    font-size: 10rem;
+  }
 }/*# sourceMappingURL=main.css.map */

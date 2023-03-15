@@ -9,7 +9,7 @@
 .white-block {
 	position: absolute;
 	height: 40px;
-	width: 60%;
+	width: 45%;
 	background-color: $pure-white;
 
 	&-left {
@@ -42,7 +42,7 @@
 		transform: scaleX(0);
 		transform-origin: right;
 		transition: transform 0.3s;
-		z-index: -1;
+		z-index: -2;
 	}
 
 	&:hover::before {
