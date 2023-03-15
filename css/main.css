@@ -65,9 +65,9 @@ body {
 
 .burger-btn {
   position: fixed;
-  top: 30px;
-  right: 30px;
-  padding: 2rem;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
   background: none;
   border: 1px solid transparent;
   cursor: pointer;
@@ -89,7 +89,7 @@ body {
 }
 .burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
-  right: 3px;
+  right: 0px;
   height: 3px;
   content: "";
   background-color: #fff;
@@ -98,11 +98,11 @@ body {
 .burger-btn__bars {
   width: 100%;
 }
-.burger-btn__bars__bars::after {
+.burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
-.burger-btn__bars__bars::before {
+.burger-btn__bars::before {
   top: 27px;
   width: 30%;
   transition-delay: 0.1s;
