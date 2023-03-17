@@ -120,7 +120,7 @@ body {
 @keyframes navItemsAnimation {
 	
 	from {
-		transform: translateX(200%);
+		transform: translateX(100%);
 	}
 
 	to {
@@ -128,7 +128,8 @@ body {
 	}
 }
 
-.nav-imtems-animation {
+
+.nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
 

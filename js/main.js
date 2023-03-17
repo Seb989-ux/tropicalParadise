@@ -26,4 +26,3 @@ const handleNavItemsAnimation = () => {
 
 navBtn.addEventListener('click', handleNav)
 
-// Funkcje powyżej są odpowiedzialne za wysunięcie się nav z prawej strony. Poszczególne itemy miały wychodzić z opóznieniem o kolejne 0.1 s, ale coś nie działa..

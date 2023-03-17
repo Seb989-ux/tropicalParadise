@@ -150,13 +150,13 @@ body {
 
 @keyframes navItemsAnimation {
   from {
-    transform: translateX(200%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0);
   }
 }
-.nav-imtems-animation {
+.nav-items-animation {
   animation: navItemsAnimation 1s both;
 }
 
