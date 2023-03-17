@@ -45,6 +45,21 @@
   transform-origin: left;
 }
 
+.section-title {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #164dcc;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
 *,
 *::before,
 *::after {
