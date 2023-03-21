@@ -18,7 +18,9 @@ body {
 	font-size: 1.6rem;
 }
 
-// nav
+// //////////////
+// Nav
+// //////////////
 
 .burger-btn {
 	position: fixed;
@@ -129,7 +131,9 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
-// header
+// //////////////
+// Header
+// //////////////
 
 .header {
 	position: relative;
@@ -172,8 +176,10 @@ body {
 	}
 }
 
+// //////////////
 // Main
 // Dream section
+// //////////////
 
 .dreams {
 	&__box {
@@ -195,8 +201,10 @@ body {
 		font-size: 1.4rem;
 	}
 }
+// //////////////
+// Hero
+// //////////////
 
-// hero
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
@@ -216,7 +224,9 @@ body {
 	}
 }
 
-// Islands
+// //////////////
+// Islands section
+// //////////////
 
 .islands {
 	&__card {
@@ -332,7 +342,9 @@ body {
 	}
 }
 
+// //////////////
 // Offers section
+// //////////////
 
 .offers {
 	position: relative;
@@ -394,7 +406,9 @@ body {
 	}
 }
 
+// //////////////
 // Reviews section
+// //////////////
 
 @media (max-width: 767px) {
 	.reviews.section-padding {
@@ -436,7 +450,9 @@ body {
 	}
 }
 
-// Contact
+// //////////////
+// Contact section
+// //////////////
 
 .contact {
 	position: relative;
@@ -488,7 +504,61 @@ body {
 	}
 }
 
+// //////////////
+// Footer
+// //////////////
+
+.footer {
+	color: $pure-white;
+	background-color: $dark;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+
+		&-desktop {
+			display: none;
+		}
+
+		&-title {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+
+		&-social {
+			margin: 2em 0 1em;
+		}
+
+		&-link {
+			padding: 0 0.3em;
+			color: $pure-white;
+			font-size: 4rem;
+			text-decoration: none;
+			transition: color 0.3s;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:hover {
+				color: $light-white;
+			}
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+}
+
+// //////////////
 // Media
+// //////////////
 
 @media (min-width: 576px) {
 	.dreams {
@@ -601,6 +671,43 @@ body {
 		&__card {
 			margin: 1em;
 			width: 45%;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+
+			&-title {
+				font-size: 2.4rem;
+			}
+
+			&-list {
+				list-style: none;
+
+				&-item {
+					margin-bottom: 1em;
+					
+					a {
+						color: $light-white;
+						text-decoration: none;
+					}
+				}
+			}
 		}
 	}
 }
