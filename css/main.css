@@ -11,9 +11,14 @@
   width: 60%;
   background-color: #fff;
 }
-.white-block-left, .white-block-right {
+.white-block-left {
   bottom: 0;
   left: -50px;
+  transform: skew(45deg);
+}
+.white-block-right {
+  top: 0;
+  right: -50px;
   transform: skew(45deg);
 }
 
@@ -487,7 +492,6 @@ body {
   margin: 1em;
   width: 100%;
   max-width: 300px;
-  font-size: 1.6rem;
   color: #fff;
   background-color: #1755e7;
   border: none;
