@@ -436,6 +436,59 @@ body {
 	}
 }
 
+// Contact
+
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: $dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+
+		&-label {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+
+		&-input {
+			@include contactForm;
+		}
+
+		&-textarea {
+			@include contactForm;
+			max-width: 100%;
+			min-width: 100%;
+			width: 100%;
+			min-height: 150px;
+		}
+
+		&-btn {
+			align-self: flex-end;
+			padding: 1em;
+			margin: 1em;
+			width: 100%;
+			max-width: 300px;
+			font-size: 1.6rem;
+			color: $pure-white;
+			background-color: $main-color;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+
+			&::before {
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
+
 // Media
 
 @media (min-width: 576px) {

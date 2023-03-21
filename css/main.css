@@ -11,14 +11,9 @@
   width: 60%;
   background-color: #fff;
 }
-.white-block-left {
+.white-block-left, .white-block-right {
   bottom: 0;
   left: -50px;
-  transform: skew(45deg);
-}
-.white-block-right {
-  top: 0;
-  right: -50px;
   transform: skew(45deg);
 }
 
@@ -450,6 +445,57 @@ body {
   margin-bottom: 1em;
   font-size: 3rem;
   color: #1755e7;
+}
+
+.contact {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: #2e2e2e;
+}
+.contact__form, .contact__form-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-label, .contact__form-top-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input, .contact__form-top-input {
+  margin-bottom: 1em;
+  padding: 0.6em -1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.contact__form-textarea, .contact__form-top-textarea {
+  margin-bottom: 1em;
+  padding: 0.6em -1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+.contact__form-btn, .contact__form-top-btn {
+  align-self: flex-end;
+  padding: 1em;
+  margin: 1em;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #1755e7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact__form-btn::before, .contact__form-top-btn::before {
+  background-color: #164dcc;
 }
 
 @media (min-width: 576px) {
