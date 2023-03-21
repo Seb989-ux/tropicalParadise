@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@300;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d18c1b9f9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -27,11 +29,10 @@
         <div class="nav__items">
             <a href="#islands" class="nav__item">Wyspy</a>
             <a href="#offers" class="nav__item">Oferty</a>
-            <a href="#reviwes" class="nav__item">Opinie</a>
+            <a href="#reviews" class="nav__item">Opinie</a>
             <a href="#contact" class="nav__item">Kontakt</a>
         </div>
     </nav>
-
     <header class="header section">
         <h1 class="header__title">Tropical Paradise</h1>
         <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -43,7 +44,6 @@
         <section class="dream section-padding section white-section">
             <div class="wrapper">
                 <h2 class="section-heading">Spełniaj marzenia</h2>
-
                 <div class="dreams__box">
                     <div class="dreams__box-img">
                         <img src="/img/paradise-gac96e09c9_640.jpg" alt="Domki na palach nad oceanem"
@@ -57,7 +57,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="dreams__box">
                     <div class="dreams__box-img dreams__box-img--right">
                         <img src="/img/bora-bora-g74e793354_640.jpg"
@@ -73,7 +72,6 @@
                 </div>
             </div>
         </section>
-
         <section class="hero-img section">
             <div class="white-block white-block-left"></div>
             <div class="white-block white-block-right"></div>
@@ -82,7 +80,6 @@
             <p class="hero-img__text">Jedyne takie miejsce na ziemi</p>
             <hr>
         </section>
-
         <section class="islands section-padding section white-section" id="islands">
             <div class="wrapper">
                 <h2 class="section-heading">Polecane wyspy</h2>
@@ -144,18 +141,12 @@
                 </div>
             </div>
         </section>
-
         <section class="offers section-padding section" id="offers">
-
             <div class="white-block white-block-right"></div>
             <div class="white-block white-block-left"></div>
-
             <h2 class="section-heading">Oferty</h2>
-
             <div class="wrapper">
-
                 <div class="offers__block">
-
                     <div class="offers__option">
                         <img src="./img/party.jpg" alt="Impreza z dziećmi nad wodą" class="offers__option-img">
                         <div class="offers__option-info">
@@ -168,7 +159,8 @@
                         </div>
                     </div>
                     <div class="offers__option">
-                        <img src="./img/campfire.jpg" alt="Wieczorne ognisko na środku plaży" class="offers__option-img offers__option-img--right">
+                        <img src="./img/campfire.jpg" alt="Wieczorne ognisko na środku plaży"
+                            class="offers__option-img offers__option-img--right">
                         <div class="offers__option-info">
                             <h3 class="offers__option-heading">Wypad z kumplami</h3>
                             <p class="offers__option-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -189,15 +181,55 @@
                             <button class="offers__option-btn btn-special-animation">Wybierz</button>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
+        </section>
+        <section class="reviews section-padding white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews_boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion_1.jpg" alt="Anna Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corrupti at sunt tempore maxime ipsum et delectus ex, soluta molestiae expedita?</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion_2.jpg" alt="Janusz Nowak">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corrupti at sunt tempore maxime ipsum et delectus ex, soluta molestiae expedita?</p>
+                            <strong>Janusz Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/opinion_3.jpg" alt="Karina Mazur">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corrupti at sunt tempore maxime ipsum et delectus ex, soluta molestiae expedita?</p>
+                            <strong>Karina Mazur</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/slick.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

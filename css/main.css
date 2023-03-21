@@ -392,7 +392,7 @@ body {
 .offers__option-info {
   padding: 2em;
   background-color: #fff;
-  z-index: 100;
+  z-index: 10;
 }
 .offers__option-heading {
   margin-bottom: 0.5em;
