@@ -252,7 +252,7 @@ body {
 			}
 
 			&--second {
-				background-image: $blue-gradient, url('//img/boat.jpg');
+				background-image: $blue-gradient, url('../img/boat.jpg');
 			}
 
 			&--third {
@@ -272,6 +272,60 @@ body {
 
 				i {
 					margin-right: 0.3rem;
+				}
+			}
+		}
+
+		&-info {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border-radius: 8px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: $light-blue-gradient-solid;
+			opacity: 0;
+			transform: rotateY(180deg);
+			transition: transform 1s, opacity 1s;
+
+			&-title {
+				@include cardStyles;
+				top: 1.2rem;
+				font-family: 'Dancing Script', cursive;
+				font-size: 2.8rem;
+			}
+
+			&-list {
+				margin: 0 auto;
+				width: 70%;
+				list-style: none;
+
+				&-item {
+					padding: 1em;
+					font-size: 1.4rem;
+					border-bottom: 1px solid $light-white;
+
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+
+			&-btn {
+				@include cardStyles;
+				padding: 1em;
+				bottom: 2em;
+				border: none;
+				width: 80%;
+				border-radius: 8px;
+				background-color: $green-color;
+				cursor: pointer;
+
+				&::before {
+					background-color: $green-color-hover;
 				}
 			}
 		}
@@ -348,6 +402,20 @@ body {
 			font-size: 2.2rem;
 		}
 	}
+
+.islands {
+	&__cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		margin: 1em;
+		width: 45%;
+	}
+}
+
 }
 
 @media (min-width: 992px) {
@@ -406,6 +474,14 @@ body {
 
 		&__text {
 			font-size: 2rem;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.islands {
+		&__card {
+			width: 30%;
 		}
 	}
 }
