@@ -13,7 +13,6 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d18c1b9f9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -187,7 +186,7 @@
         <section class="reviews section-padding white-section" id="reviews">
             <h2 class="section-heading">Opinie</h2>
             <div class="wrapper">
-                <div class="reviews_boxes">
+                <div class="reviews__boxes">
                     <div class="reviews__box">
                         <div class="reviews__box-img">
                             <img src="./img/opinion_1.jpg" alt="Anna Nowak">
@@ -224,11 +223,28 @@
                 </div>
             </div>
         </section>
-
+        <section class="contact section-padding section-white-section" id="contact">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+            <h2 class="section-heading">Kontakt</h2>
+            <div class="wrapper">
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i Nazwisko</label>
+                        <input type="text" class="contact__form-input" id="name">
+                        <label for="e-mail" class="contact__form-label">Adres e-mail</label>
+                        <input type="text" class="contact__form-input" id="e-mail">
+                    </div>
+                    <label for="msg" class="contact__form-label">Wiadomość</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/slick.js"></script>
     <script src="/js/main.js"></script>
 </body>
