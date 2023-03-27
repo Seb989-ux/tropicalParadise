@@ -1,6 +1,9 @@
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
+const navBtnBars = document.querySelector('.burger-btn__bars')
+const allSection = document.querySelectorAll('.section')
+const footerYear = document.querySelector('.footer__year')
 
 const handleNav = () => {
 	nav.classList.toggle('nav--active')
@@ -14,6 +17,7 @@ const handleNav = () => {
 	handleNavItemsAnimation()
 }
 
+
 const handleNavItemsAnimation = () => {
 	let delayTime = 0
 
@@ -24,5 +28,23 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-navBtn.addEventListener('click', handleNav)
+const handleObserver = () => {
+	const currentObserver = window.scrollY;
+	allSection.forEach(section => {
+		if (section.classList.contains('white-section') && section.offset.Top <= currentSection + 60) {
+			navBtnBars.classList.add('black-bars-color')
+		} else if (!section.classList.contains('white-section') && section.offset.Top <= currentSection + 60) {
+			navBtnBars.classList.remove('black-bars-color')
+		}
+	})
+}
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+
+handleCurrentYear()
+navBtn.addEventListener('click', handleNav)
+window.addEventListener('scroll', handleObserver)
