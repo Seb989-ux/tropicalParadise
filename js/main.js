@@ -17,7 +17,6 @@ const handleNav = () => {
 	handleNavItemsAnimation()
 }
 
-
 const handleNavItemsAnimation = () => {
 	let delayTime = 0
 
@@ -29,11 +28,17 @@ const handleNavItemsAnimation = () => {
 }
 
 const handleObserver = () => {
-	const currentObserver = window.scrollY;
+	const currentSection = window.scrollY
 	allSection.forEach(section => {
-		if (section.classList.contains('white-section') && section.offset.Top <= currentSection + 60) {
+		if (
+			section.classList.contains('white-section') &&
+			section.offsetTop <= currentSection + 60
+		) {
 			navBtnBars.classList.add('black-bars-color')
-		} else if (!section.classList.contains('white-section') && section.offset.Top <= currentSection + 60) {
+		} else if (
+			!section.classList.contains('white-section') &&
+			section.offsetTop <= currentSection + 60
+		) {
 			navBtnBars.classList.remove('black-bars-color')
 		}
 	})
@@ -43,7 +48,6 @@ const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
 }
-
 
 handleCurrentYear()
 navBtn.addEventListener('click', handleNav)
